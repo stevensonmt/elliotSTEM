@@ -1,4 +1,4 @@
-/*talk about the calc() for setting truly dynamic sizing with a maximum width for the side bar*/
+@import url('https://fonts.googleapis.com/css?family=Candal|Raleway');
 
 :root {
   --main-color: #58d68d;
@@ -38,7 +38,6 @@ nav {
   width: 25%;
   max-width: 200px;
   height: calc(100vh - 64px);
-  /*height: calc(100vh - 64px);*/
   float: left;
 }
 
@@ -115,8 +114,6 @@ footer {
   padding-bottom: 1em;
   float: right;
   text-align: right;
-  /*padding-top: 0.6em;
-  padding-bottom: 0.6em;*/
   padding-right: 16px;
   font-family: Raleway, sans-serif;
   font-weight: bold;
