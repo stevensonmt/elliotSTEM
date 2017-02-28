@@ -10,9 +10,7 @@
   --menu-text-color: #1C2833;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 html, body {
   width: 100vw;
   min-height: 100vh;
@@ -20,13 +18,18 @@ html, body {
   padding: 0;
 }
 
+@media only screen and (min-width: 600px) {
+  /*desktop*/
+  * {
+    box-sizing: border-box;
+  }
+
 header {
   background-color: var(--accent-color);
   width: 100vw;
   height: 2em;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
-  float: top;
   color: var(--menu-text-color);
   font-family: Candal, sans-serif;
   font-size: 2em;
@@ -39,6 +42,39 @@ nav {
   max-width: 200px;
   height: calc(100vh - 64px);
   float: left;
+}
+
+main {
+  background-color: var(--main-color);
+  min-width: 75%;
+  width: calc(100% - 200px);
+  height: calc(100vh - 124px);
+  float: left;
+  color: var(--main-text-color);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+footer {
+  color: var(--menu-text-color);
+  background-color: var(--accent-color);
+  min-width: 75%;
+  width: calc(100% - 200px);
+  height: 60px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  float: right;
+  text-align: right;
+  padding-right: 16px;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 0.8em;
 }
 
 .button {
@@ -85,37 +121,114 @@ nav {
 .cowboys:hover {
   background-image: url(../images/cowboyshover.png);
 }
-
-main {
-  background-color: var(--main-color);
-  min-width: 75%;
-  width: calc(100% - 200px);
-  height: calc(100vh - 124px);
-  float: left;
-  color: var(--main-text-color);
-  padding-left: 10%;
-  padding-right: 10%;
-
 }
 
-main img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-}
-footer {
-  color: var(--menu-text-color);
-  background-color: var(--accent-color);
-  min-width: 75%;
-  width: calc(100% - 200px);
-  height: 60px;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  float: right;
-  text-align: right;
-  padding-right: 16px;
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 0.8em;
+@media only screen and (max-width: 600px) {
+  /*mobile devices*/
+  * {
+    box-sizing: border-box;
+  }
+
+  header {
+    background-color: var(--accent-color);
+    width: 100vw;
+    height: 3.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    float: none;
+    color: var(--menu-text-color);
+    font-family: Candal, sans-serif;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    height: 100px;
+    color: var(--nav-text-color);
+    background-color: var(--lowlight-color);
+    }
+
+    nav li {
+      float: left;
+    }
+    nav ul {
+      margin: 0;
+    }
+
+  main {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 125vw;
+    float: left;
+    color: var(--main-text-color);
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 10px;
+
+  }
+
+  main img {
+    display: inline-flex;
+    padding-top: 15vw;
+  }
+  footer {
+    color: var(--menu-text-color);
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 3.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    float: right;
+    text-align: right;
+    padding-right: 2.5em;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  .button {
+    width: 20vw;
+    height: 50px;
+    background-size: cover;
+    border: none;
+    border-radius: 12px;
+    color: var(--nav-text-color);
+    padding: 2.1vw;
+    margin: 25px 5vw;
+    text-align: center;
+    display: block;
+    font-size: 0;
+    background-color: grey;
+  }
+
+  .button:hover {
+    font-size: 4vw;
+  }
+
+  .home {
+    background-image: url(../images/elliott.png);
+    background-position: center;
+  }
+  .home:hover {
+    background-image: url(../images/elliotthover.png);
+  }
+
+  .brouillet {
+    background-image: url(../images/bobcat.png);
+    background-position: center;
+  }
+
+  .brouillet:hover {
+    background-image: url(../images/bobcathover.png);
+  }
+
+  .cowboys {
+    background-image: url(../images/cowboys.png);
+    background-position: center;
+  }
+
+  .cowboys:hover {
+    background-image: url(../images/cowboyshover.png);
+  }
 }
