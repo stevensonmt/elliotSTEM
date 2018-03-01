@@ -125,6 +125,17 @@ footer {
 .cowboys:hover {
   background-image: url(../images/cowboyshover.png);
 }
+
+.game2018 {
+  background-image: url(../images/2018.png);
+  background-position: center;
+}
+
+.game2018:hover {
+  background-image: url(../images/2018hover.png);
+}
+
+
 }
 
 @media only screen and (max-width: 600px) {
