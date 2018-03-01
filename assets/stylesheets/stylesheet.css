@@ -24,118 +24,116 @@ html, body {
     box-sizing: border-box;
   }
 
-header {
-  background-color: var(--accent-color);
-  width: 100vw;
-  height: 2em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  color: var(--menu-text-color);
-  font-family: Candal, sans-serif;
-  font-size: 2em;
-  text-align: center;
-}
+  header {
+    background-color: var(--accent-color);
+    width: 100vw;
+    height: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    color: var(--menu-text-color);
+    font-family: Candal, sans-serif;
+    font-size: 2em;
+    text-align: center;
+  }
 
-nav {
-  color: var(--nav-text-color);
-  background-color: var(--lowlight-color);
-  width: 25%;
-  max-width: 200px;
-  bottom: 0px;
-  height: calc(100vh - 64px);
-  float: left;
-}
+  nav {
+    color: var(--nav-text-color);
+    background-color: var(--lowlight-color);
+    width: 25%;
+    max-width: 200px;
+    bottom: 0px;
+    height: calc(100vh - 64px);
+    float: left;
+  }
 
-main {
-  background-color: var(--main-color);
-  min-width: 75%;
-  width: calc(100% - 200px);
-  min-height: calc(100% - 124px);
-  height: calc(100vh - 124px);
-  float: left;
-  color: var(--main-text-color);
-  padding-left: 10%;
-  padding-right: 10%;
-  overflow: auto;
-}
+  main {
+    background-color: var(--main-color);
+    min-width: 75%;
+    width: calc(100% - 200px);
+    min-height: calc(100% - 124px);
+    height: calc(100vh - 124px);
+    float: left;
+    color: var(--main-text-color);
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: auto;
+  }
 
-main img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-}
-footer {
-  color: var(--menu-text-color);
-  background-color: var(--accent-color);
-  min-width: 75%;
-  width: calc(100% - 200px);
-  height: 60px;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  float: right;
-  text-align: right;
-  padding-right: 16px;
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 0.8em;
-}
+  main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+  footer {
+    color: var(--menu-text-color);
+    background-color: var(--accent-color);
+    min-width: 75%;
+    width: calc(100% - 200px);
+    height: 60px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    float: right;
+    text-align: right;
+    padding-right: 16px;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
 
-.button {
-  width: 100px;
-  height: 50px;
-  background-size: cover;
-  border: none;
-  border-radius: 12px;
-  color: var(--nav-text-color);
-  padding: 8px;
-  margin: 30px 0;
-  text-align: center;
-  display: block;
-  font-size: 0;
-  background-color: grey;
-}
+  .button {
+    width: 100px;
+    height: 50px;
+    background-size: cover;
+    border: none;
+    border-radius: 12px;
+    color: var(--nav-text-color);
+    padding: 8px;
+    margin: 30px 0;
+    text-align: center;
+    display: block;
+    font-size: 0;
+    background-color: grey;
+  }
 
-.button:hover {
-  font-size: 1.2em;
-}
+  .button:hover {
+    font-size: 1.2em;
+  }
 
-.home {
-  background-image: url(../images/elliott.png);
-  background-position: center;
-}
-.home:hover {
-  background-image: url(../images/elliotthover.png);
-}
+  .home {
+    background-image: url(../images/elliott.png);
+    background-position: center;
+  }
+  .home:hover {
+    background-image: url(../images/elliotthover.png);
+  }
 
-.brouillet {
-  background-image: url(../images/bobcat.png);
-  background-position: center;
-}
+  .brouillet {
+    background-image: url(../images/bobcat.png);
+    background-position: center;
+  }
 
-.brouillet:hover {
-  background-image: url(../images/bobcathover.png);
-}
+  .brouillet:hover {
+    background-image: url(../images/bobcathover.png);
+  }
 
-.cowboys {
-  background-image: url(../images/cowboys.png);
-  background-position: center;
-}
+  .cowboys {
+    background-image: url(../images/cowboys.png);
+    background-position: center;
+  }
 
-.cowboys:hover {
-  background-image: url(../images/cowboyshover.png);
-}
+  .cowboys:hover {
+    background-image: url(../images/cowboyshover.png);
+  }
 
-.game2018 {
-  background-image: url(../images/2018.png);
-  background-position: center;
-}
+  .game2018 {
+    background-image: url(../images/2018.png);
+    background-position: center;
+  }
 
-.game2018:hover {
-  background-image: url(../images/2018hover.png);
-}
-
-
+  .game2018:hover {
+    background-image: url(../images/2018hover.png);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -247,4 +245,14 @@ footer {
   .cowboys:hover {
     background-image: url(../images/cowboyshover.png);
   }
+
+  .game2018 {
+    background-image: url(../images/2018.png);
+    background-position: center;
+  }
+
+  .game2018:hover {
+    background-image: url(../images/2018hover.png);
+  }
+
 }
